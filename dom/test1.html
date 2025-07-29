@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test 1 Blub on off</title>
+    <style>
+      .container {
+        width: 200px;
+        height: 200px;
+        /* background-color: red; */
+        border-radius: 50%;
+        /* border: 1px solid black; */
+      }
+      .btn button {
+        margin: 20px 0px 0px 30px;
+        padding: 20px;
+        background-color: red;
+        cursor: pointer;
+        border: none;
+        color: white;
+        border-radius: 50%;
+      }
+      .btn > button:hover {
+        background-color: rgb(156, 47, 47);
+        transition: ease-in;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container"></div>
+    <div class="btn">
+      <button class="btnon">ON</button>
+      <button class="btnoff">OFF</button>
+    </div>
+    <script src="test1.js"></script>
+  </body>
+</html>
