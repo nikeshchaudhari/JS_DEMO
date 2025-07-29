@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fan control</title>
+    <style>
+      .fan {
+        width: 200px;
+        height: 250px;
+        margin: 40px auto;
+        background: url("https://pnghq.com/wp-content/uploads/ceiling-fan-symbol-png-png-graphic-download-15257-300x300.png");
+        background-size: cover;
+        /* border-radius: 50%; */
+        animation: rotate 0s linear infinite;
+      }
+      @keyframes rotate {
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      .controls {
+        text-align: center;
+      }
+      button {
+        cursor: pointer;
+        padding: 10px 20px;
+        margin: 5px;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="fan"></div>
+    <div class="controls">
+      <button class="onbtn">ON</button>
+      <button class="offbtn">OFF</button>
+      <button class="lowbtn">LOW</button>
+      <button class="mediumbtn">MEDIUM</button>
+      <button class="highbtn">HIGH</button>
+    </div>
+
+    <script src="test.js">
+    //   const fan = document.querySelector(".fan");
+
+    //   function fanon() {
+    //     fan.style.animationDuration = "1s";
+    //   }
+
+    //   function fanoff() {
+    //     fan.style.animationDuration = "0s";
+    //   }
+
+    //   function speed(val) {
+    //     switch (val) {
+    //       case 1:
+    //         fan.style.animationDuration = "1.5s";
+    //         break;
+    //         case 2 :
+    //             fan.style.animationDuration ="0.5s"
+    //             break;
+    //         case 3 :
+    //             fan.style.animationDuration = "0.3s"
+    //             break;
+    //     }
+    //   }
+    </script>
+  </body>
+</html>
