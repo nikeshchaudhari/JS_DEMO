@@ -23,29 +23,40 @@
 //     bulb.style.backgroundColor="black"
 // })
 
-const fan = document.querySelector(".fan");
-const onbtn = document.querySelector(".onbtn");
-const offbtn = document.querySelector(".offbtn");
-const lowbtn = document.querySelector(".lowbtn");
-const mediumbtn = document.querySelector(".mediumbtn");
-const highbtn = document.querySelector(".highbtn");
+// 2. Fan Control
 
-onbtn.addEventListener("click", function () {
-  fan.style.animationDuration = "1s";
-});
-offbtn.addEventListener("click", function () {
-  fan.style.animationDuration = "0s";
-});
+// const fan = document.querySelector(".fan");
+// const onbtn = document.querySelector(".onbtn");
+// const offbtn = document.querySelector(".offbtn");
+// const lowbtn = document.querySelector(".lowbtn");
+// const mediumbtn = document.querySelector(".mediumbtn");
+// const highbtn = document.querySelector(".highbtn");
 
-lowbtn.addEventListener("click", function () {
-     fan.style.animation = "rotate 1.5s linear infinite";
+// onbtn.addEventListener("click", function () {
+//   fan.style.animationDuration = "1s";
+// });
+// offbtn.addEventListener("click", function () {
+//   fan.style.animationDuration = "0s";
+// });
+
+// lowbtn.addEventListener("click", function () {
+//      fan.style.animation = "rotate 1.5s linear infinite";
   
-}); 
+// }); 
 
-mediumbtn.addEventListener("click",function(){
-    fan.style.animation = "rotate 0.8s linear infinite"
-})
+// mediumbtn.addEventListener("click",function(){
+//     fan.style.animation = "rotate 0.8s linear infinite"
+// })
 
-highbtn.addEventListener("click",function(){
-    fan.style.animation = "rotate 0.5s linear infinite" 
+// highbtn.addEventListener("click",function(){
+//     fan.style.animation = "rotate 0.5s linear infinite" 
+// })
+
+// 3. Character Count
+
+const textInput = document.querySelector("#textInput")
+const charCount = document.querySelector("#charCount")
+
+textInput.addEventListener("input",function(){
+  charCount.textContent = textInput.value.length
 })
